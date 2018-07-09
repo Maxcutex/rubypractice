@@ -23,11 +23,13 @@ end
 
 class Person(age,gender,name) < Animal 
     attr_accessor :age,:gender,:name
+    @@no_of_people_created = 0 
     def initialize
         @kind = "Person"
         @age = 0
         @gender = ""
         @name = ""
+        @@no_of_people_created +=1years
     end 
 
     def eat(food)
